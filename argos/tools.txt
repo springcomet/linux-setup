@@ -1,0 +1,137 @@
+Remmina Connect Remote | useMarkup=false iconName=org.remmina.Remmina bash='remmina-file-wrapper -c ~/.local/share/remmina/group_rdp_home_home-shavit-in.remmina' terminal=false
+Remmina Connect Local | useMarkup=false iconName=org.remmina.Remmina bash='remmina-file-wrapper -c ~/.local/share/remmina/group_rdp_gag_gag-local.remmina' terminal=false
+Document Scanner | useMarkup=false iconName=org.gnome.SimpleScan bash='simple-scan' terminal=false
+XSane | useMarkup=false iconName=xsane bash='xsane' terminal=false
+Spotify | useMarkup=false iconName=org.gnome.spotify bash='env BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/spotify_spotify.desktop /snap/bin/spotify' terminal=false
+Private | useMarkup=false iconName=network-wireless-encrypted bash='sudo mount -t ecryptfs -o ecryptfs_cipher=aes -o ecryptfs_key_bytes=32 -o ecryptfs_enable_filename_crypto=n -o ecryptfs_passthrough=n -o key=passphrase ~/Documents/.private.enc ~/Documents/Private; exit' terminal=true
+Tools
+--Htop | useMarkup=false iconName=htop bash='htop' terminal=true
+--Midnight Commander | useMarkup=false iconName=MidnightCommander bash='mc' terminal=
+--CopyQ | useMarkup=false iconName=copyq bash='copyq' terminal=false
+--Authy Desktop | useMarkup=false iconName=/snap/authy/11/meta/gui/icon.png bash='env BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/authy_authy.desktop /snap/bin/authy' terminal=false
+--Flameshot | useMarkup=false iconName=flameshot bash='flameshot' terminal=false
+--Windows Box | useMarkup=false iconName=org.gnome.Boxes bash='gnome-boxes --open-uuid 10287683-5a3a-4287-81de-2f99e6b0b21a' terminal=false
+--Dropbox | useMarkup=false iconName=dropbox bash='/home/aviv/.dropbox-dist/dropbox-lnx.x86_64-*/dropbox start' terminal=false
+--Bat | useMarkup=false iconName=bat bash='bat' terminal=true
+Collab
+--Telegram Desktop | useMarkup=false iconName=/snap/telegram-desktop/4024/meta/gui/icon.png bash='env BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/telegram-desktop_telegram-desktop.desktop /snap/bin/telegram-desktop --' terminal=false
+--Microsoft Teams - Preview | useMarkup=false iconName=teams bash='teams' terminal=false
+Development
+--GoLand | useMarkup=false iconName=/home/aviv/.local/share/JetBrains/Toolbox/apps/Goland/ch-0/.icon.svg bash='"/home/aviv/.local/share/JetBrains/Toolbox/apps/Goland/ch-0/221.5921.26/bin/goland.sh"' terminal=false
+--Visual Studio Code | useMarkup=false iconName=/snap/code/101/meta/gui/com.visualstudio.code.png bash='env BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/code_code.desktop /snap/bin/code --force-user-env --unity-launch' terminal=false
+--IntelliJ IDEA Community Edition | useMarkup=false iconName=/home/aviv/.local/share/JetBrains/Toolbox/apps/IDEA-C/ch-0/.icon.svg bash='"/home/aviv/.local/share/JetBrains/Toolbox/apps/IDEA-C/ch-0/221.5921.22/bin/idea.sh"' terminal=false
+--JetBrains Toolbox | useMarkup=false iconName=/home/aviv/.local/share/JetBrains/Toolbox/toolbox.svg bash='/home/aviv/.local/share/JetBrains/Toolbox/bin/jetbrains-toolbox' terminal=false
+--PyCharm Community | useMarkup=false iconName=/home/aviv/.local/share/JetBrains/Toolbox/apps/PyCharm-C/ch-0/.icon.svg bash='"/home/aviv/.local/share/JetBrains/Toolbox/apps/PyCharm-C/ch-0/221.5921.27/bin/pycharm.sh"' terminal=false
+Media
+--Spotify | useMarkup=false iconName=/snap/spotify/60/usr/share/spotify/icons/spotify-linux-128.png bash='env BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/spotify_spotify.desktop /snap/bin/spotify' terminal=false
+--PulseAudio Volume Control | useMarkup=false iconName=multimedia-volume-control bash='pavucontrol' terminal=false
+--Rhythmbox | useMarkup=false iconName=org.gnome.Rhythmbox bash='rhythmbox' terminal=false
+--Rhythmbox | useMarkup=false iconName=org.gnome.Rhythmbox bash='rhythmbox-client --select-source' terminal=false
+--Shotcut | useMarkup=false iconName=/snap/shotcut/765/meta/gui/shotcut-logo-64.png bash='env BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/shotcut_shotcut.desktop /snap/bin/shotcut' terminal=false
+--VLC media player | useMarkup=false iconName=/snap/vlc/2344/usr/share/icons/hicolor/256x256/apps/vlc.png bash='env BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/vlc_vlc.desktop /snap/bin/vlc' terminal=false
+--Videos | useMarkup=false iconName=org.gnome.Totem bash='totem' terminal=false
+--Okular | useMarkup=false iconName=/snap/okular/109/meta/gui/icon.png bash='env BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/okular_okular.desktop /snap/bin/okular' terminal=false
+Game
+--Steam | useMarkup=false iconName=steam bash='/usr/games/steam' terminal=false
+--AisleRiot Solitaire | useMarkup=false iconName=gnome-aisleriot bash='/usr/games/sol' terminal=false
+--Counter-Strike: Global Offensive | useMarkup=false iconName=steam_icon_730 bash='steam steam://rungameid/730' terminal=false
+--Dota 2 | useMarkup=false iconName=steam_icon_570 bash='steam steam://rungameid/570' terminal=false
+--Mahjongg | useMarkup=false iconName=org.gnome.Mahjongg bash='gnome-mahjongg' terminal=false
+--Mines | useMarkup=false iconName=org.gnome.Mines bash='gnome-mines' terminal=false
+--Sudoku | useMarkup=false iconName=org.gnome.Sudoku bash='gnome-sudoku' terminal=false
+Graphics
+--Document Scanner | useMarkup=false iconName=org.gnome.SimpleScan bash='simple-scan' terminal=false
+--GNU Image Manipulation Program | useMarkup=false iconName=gimp bash='gimp-2.10' terminal=false
+--Image Viewer | useMarkup=false iconName=org.gnome.eog bash='eog' terminal=false
+--ImageMagick (color depth=q16) | useMarkup=false iconName=display-im6.q16 bash='/usr/bin/display-im6.q16 -nostdin' terminal=false
+--Lios | useMarkup=false iconName=/usr/share/lios/lios.png bash='lios' terminal=false
+--Lios OCR Screenshot | useMarkup=false iconName=/usr/share/lios/lios.png bash='lios --ocr-screenshot' terminal=false
+--Pinta | useMarkup=false iconName=/snap/pinta/19/meta/gui/pinta.png bash='env BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/pinta_pinta.desktop /snap/bin/pinta' terminal=false
+--QCAD | useMarkup=false iconName=/home/aviv/opt/qcad-3.26.4-trial-linux-x86_64/qcad_icon.png bash='"/home/aviv/opt/qcad-3.26.4-trial-linux-x86_64/qcad"' terminal=false
+--Shotwell | useMarkup=false iconName=shotwell bash='shotwell' terminal=false
+--Shotwell Viewer | useMarkup=false iconName=shotwell bash='shotwell' terminal=false
+Dev
+--Lens | useMarkup=false iconName=/snap/kontena-lens/182/meta/gui/icon.png bash='env BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/kontena-lens_kontena-lens.desktop /snap/bin/kontena-lens' terminal=false
+Office
+--LibreOffice | useMarkup=false iconName=libreoffice-startcenter bash='libreoffice' terminal=false
+--LibreOffice Calc | useMarkup=false iconName=libreoffice-calc bash='libreoffice --calc' terminal=false
+--LibreOffice Draw | useMarkup=false iconName=libreoffice-draw bash='libreoffice --draw' terminal=false
+--LibreOffice Impress | useMarkup=false iconName=libreoffice-impress bash='libreoffice --impress' terminal=false
+--LibreOffice Math | useMarkup=false iconName=libreoffice-math bash='libreoffice --math' terminal=false
+--LibreOffice Writer | useMarkup=false iconName=libreoffice-writer bash='libreoffice --writer' terminal=false
+--Print Preview | useMarkup=false iconName=document-print-preview bash='evince-previewer' terminal=false
+Tweaks
+--Tweaks | useMarkup=false iconName=org.gnome.tweaks bash='gnome-tweaks' terminal=false
+--Extensions | useMarkup=false iconName=org.gnome.Extensions bash='/usr/bin/gnome-extensions-app' terminal=false
+--Fonts | useMarkup=false iconName=org.gnome.font-viewer bash='gnome-font-viewer' terminal=false
+Settings
+--About | useMarkup=false iconName=help-about bash='gnome-control-center info-overview' terminal=false
+--Advanced Network Configuration | useMarkup=false iconName=preferences-system-network bash='nm-connection-editor' terminal=false
+--Appearance | useMarkup=false iconName=preferences-ubuntu-panel bash='gnome-control-center ubuntu' terminal=false
+--Applications | useMarkup=false iconName=preferences-desktop-apps bash='gnome-control-center applications' terminal=false
+--Background | useMarkup=false iconName=preferences-desktop-wallpaper bash='gnome-control-center background' terminal=false
+--Bluetooth | useMarkup=false iconName=bluetooth bash='gnome-control-center bluetooth' terminal=false
+--Camera | useMarkup=false iconName=camera-photo bash='gnome-control-center camera' terminal=false
+--Color | useMarkup=false iconName=preferences-color bash='gnome-control-center color' terminal=false
+--Connectivity | useMarkup=false iconName=network-workgroup bash='gnome-control-center connectivity' terminal=false
+--Date & Time | useMarkup=false iconName=preferences-system-time bash='gnome-control-center datetime' terminal=false
+--Default Applications | useMarkup=false iconName=starred bash='gnome-control-center default-apps' terminal=false
+--Diagnostics | useMarkup=false iconName=system-help bash='gnome-control-center diagnostics' terminal=false
+--Displays | useMarkup=false iconName=preferences-desktop-display bash='gnome-control-center display' terminal=false
+--File History & Trash | useMarkup=false iconName=system-file-manager bash='gnome-control-center usage' terminal=false
+--IBus Preferences | useMarkup=false iconName=ibus-setup bash='ibus-setup' terminal=false
+--Input Method | useMarkup=false iconName=input-keyboard bash='im-config' terminal=false
+--Keyboard Shortcuts | useMarkup=false iconName=input-keyboard bash='gnome-control-center keyboard' terminal=false
+--Language Support | useMarkup=false iconName=preferences-desktop-locale bash='/usr/bin/gnome-language-selector' terminal=false
+--Livepatch | useMarkup=false iconName=livepatch bash='/usr/bin/software-properties-gtk --open-tab=6' terminal=false
+--Location Services | useMarkup=false iconName=location-services-active bash='gnome-control-center location' terminal=false
+--Microphone | useMarkup=false iconName=audio-input-microphone bash='gnome-control-center microphone' terminal=false
+--Mouse & Touchpad | useMarkup=false iconName=input-mouse bash='gnome-control-center mouse' terminal=false
+--Network | useMarkup=false iconName=network-workgroup bash='gnome-control-center network' terminal=false
+--Notifications | useMarkup=false iconName=preferences-system-notifications bash='gnome-control-center notifications' terminal=false
+--Online Accounts | useMarkup=false iconName=goa-panel bash='gnome-control-center online-accounts' terminal=false
+--Power | useMarkup=false iconName=gnome-power-manager bash='gnome-control-center power' terminal=false
+--Passwords and Keys | useMarkup=false iconName=org.gnome.seahorse.Application bash='seahorse' terminal=false
+--Printers | useMarkup=false iconName=printer bash='gnome-control-center printers' terminal=false
+--Printers | useMarkup=false iconName=printer bash='system-config-printer' terminal=false
+--Region & Language | useMarkup=false iconName=preferences-desktop-locale bash='gnome-control-center region' terminal=false
+--Removable Media | useMarkup=false iconName=media-removable bash='gnome-control-center removable-media' terminal=false
+--Screen Lock | useMarkup=false iconName=system-lock-screen-symbolic bash='gnome-control-center lock' terminal=false
+--Search | useMarkup=false iconName=preferences-system-search bash='gnome-control-center search' terminal=false
+--Settings | useMarkup=false iconName=org.gnome.Settings bash='gnome-control-center' terminal=false
+--Sharing | useMarkup=false iconName=preferences-system-sharing bash='gnome-control-center sharing' terminal=false
+--Software & Updates | useMarkup=false iconName=software-properties bash='software-properties-gtk' terminal=false
+--Sound | useMarkup=false iconName=multimedia-volume-control bash='gnome-control-center sound' terminal=false
+--Startup Applications | useMarkup=false iconName=session-properties bash='gnome-session-properties' terminal=false
+--Thunderbolt | useMarkup=false iconName=thunderbolt bash='gnome-control-center thunderbolt' terminal=false
+--Tweaks | useMarkup=false iconName=org.gnome.tweaks bash='gnome-tweaks' terminal=false
+--Universal Access | useMarkup=false iconName=preferences-desktop-accessibility bash='gnome-control-center universal-access' terminal=false
+--Users | useMarkup=false iconName=system-users bash='gnome-control-center user-accounts' terminal=false
+--Wacom Tablet | useMarkup=false iconName=input-tablet bash='gnome-control-center wacom' terminal=false
+--Wi-Fi | useMarkup=false iconName=network-wireless bash='gnome-control-center wifi' terminal=false
+System
+--Boxes | useMarkup=false iconName=org.gnome.Boxes bash='gnome-boxes' terminal=false
+--Disk Usage Analyzer | useMarkup=false iconName=org.gnome.baobab bash='baobab' terminal=false
+--GNOME System Monitor | useMarkup=false iconName=org.gnome.SystemMonitor bash='gnome-system-monitor' terminal=false
+--Logs | useMarkup=false iconName=org.gnome.Logs bash='gnome-logs' terminal=false
+--Power Statistics | useMarkup=false iconName=org.gnome.PowerStats bash='gnome-power-statistics' terminal=false
+--Reactivate HP LaserJet 1018/1020 after reloading paper | useMarkup=false iconName=/usr/share/pixmaps/hplj1020_icon.png bash='/usr/share/foo2zjs/hplj10xx_gui.tcl' terminal=false
+--Snap Store | useMarkup=false iconName=/snap/snap-store/558/meta/gui/io.snapcraft.Store.png bash='env BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/snap-store_snap-store.desktop /snap/bin/snap-store' terminal=false
+--Software Install | useMarkup=false iconName=system-software-install bash='env BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/snap-store_ubuntu-software-local-file.desktop /snap/bin/snap-store.ubuntu-software-local-file --local-filename' terminal=false
+--Software Sources | useMarkup=false iconName=applications-other bash='software-properties-qt' terminal=false
+--Software Updater | useMarkup=false iconName=system-software-update bash='/usr/bin/update-manager' terminal=false
+--Startup Disk Creator | useMarkup=false iconName=usb-creator-gtk bash='usb-creator-gtk' terminal=false
+--System Monitor | useMarkup=false iconName=org.gnome.SystemMonitor bash='gnome-system-monitor' terminal=false
+--Terminal | useMarkup=false iconName=org.gnome.Terminal bash='gnome-terminal' terminal=false
+--Ubuntu Software | useMarkup=false iconName=ubuntusoftware bash='env BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/snap-store_ubuntu-software.desktop /snap/bin/snap-store.ubuntu-software' terminal=false
+--Virtual Machine Manager | useMarkup=false iconName=virt-manager bash='virt-manager' terminal=false
+Utility
+--Archive Manager | useMarkup=false iconName=org.gnome.ArchiveManager bash='file-roller' terminal=false
+--Bluetooth Transfer | useMarkup=false iconName=bluetooth bash='bluetooth-sendto' terminal=false
+--Calculator | useMarkup=false iconName=org.gnome.Calculator bash='gnome-calculator' terminal=false
+--Characters | useMarkup=false iconName=org.gnome.Characters bash='/usr/bin/gnome-characters' terminal=false
+--Disks | useMarkup=false iconName=org.gnome.DiskUtility bash='gnome-disks' terminal=false
+--Files | useMarkup=false iconName=org.gnome.Nautilus bash='nautilus --new-window' terminal=false
+--Fonts | useMarkup=false iconName=org.gnome.font-viewer bash='gnome-font-viewer' terminal=false
+--Midnight Commander editor | useMarkup=false iconName=MidnightCommander bash='mcedit' terminal=false
+--Screenshot | useMarkup=false iconName=org.gnome.Screenshot bash='gnome-screenshot --interactive' terminal=false

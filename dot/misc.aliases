@@ -1,0 +1,16 @@
+termtitle() { printf "\033]0;$*\007"; }
+
+di() { docker images --format '{{.ID}}\t{{.Repository}}:{{.Tag}}'; }
+
+dips() {for c in $(d ps --format "{{.Names}}"); do echo -n "$c\t"; docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' $c ; done }
+
+alias d=docker
+
+export SAML2AWS_CONFIGFILE="~/.saml2aws"
+alias loginprod="aml2aws login -a ese-prod"
+alias logindev="saml2aws login -a ese-dev"
+
+
+chnglist() { T=${1:-2022.11.4} C=$(crane config aquadev.azurecr.io/server:$T | jq -r .config.Labels.\"com.aquasec.commit\"); echo $C ; git log --oneline $T | grep -C 10 $C ; }
+
+alias bbprs="${MY_AQUAREPO_PATH}/bin/bb/prs"

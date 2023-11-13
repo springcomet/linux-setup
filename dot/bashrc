@@ -1,0 +1,33 @@
+
+nullglobstate="$(shopt -p nullglob)"
+shopt -s nullglob
+for aliasfile in ~/.*.aliases ; do
+  . $aliasfile
+done
+
+if [ -r /usr/share/bash-completion/completions/git ]; then
+  source /usr/share/bash-completion/completions/git
+  __git_complete g_cosu _git_checkout 
+fi
+
+
+eval "$nullglobstate"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export GOPATH="$HOME/go"
+
+function _update_ps1() {
+    PS1="$($GOPATH/bin/powerline-go -cwd-max-depth 3 -condensed -error $?)"
+}
+
+if [ "$TERM" != "linux" ] && [ -f "$GOPATH/bin/powerline-go" ]; then
+    PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
+fi
+
+ # https://github.com/wting/autojump
+ [[ -s /home/aviv/.autojump/etc/profile.d/autojump.sh ]] && source /home/aviv/.autojump/etc/profile.d/autojump.sh
+
+ . .common.env

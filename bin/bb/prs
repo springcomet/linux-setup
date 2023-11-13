@@ -1,0 +1,8 @@
+#!/bin/env bash
+. $MY_CREDS_FILE
+AS_BITBUCKET_APPPASS=$CREDS_bitbucket
+token=$(echo -n "avivataqua:${AS_BITBUCKET_APPPASS}" | base64)
+curl -s --request GET \
+ --url 'https://api.bitbucket.org/2.0/pullrequests/avivataqua' \
+ --header "Authorization: Basic ${token}" \
+ --header 'Accept: application/json' | jq '.values[] | (.title, .links.self)'

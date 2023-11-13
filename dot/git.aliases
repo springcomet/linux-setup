@@ -1,0 +1,9 @@
+alias g_fps='echo "fetching ..."; git fetch -p && echo "pulling ..." ; git pull && echo "submodules ..." ; git submodule update --init'
+alias g_cacode='git -c core.editor="code --wait" commit --amend'
+alias g_cicode='git -c core.editor="code --wait" commit'
+alias g_root='cd $(git rev-parse --show-toplevel)'
+function g_cosu () {
+    git checkout $1
+    git submodule update --init
+}
+

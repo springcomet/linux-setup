@@ -1,0 +1,187 @@
+custom:
+flameshot
+chrome-gnome-shell
+xclip
+jq
+terminus
+apt install -y zsh
+google-chrome-stable
+curl
+multitail
+htop 
+kubectl
+fd https://github.com/sharkdp/fd/releases fdfind
+rg https://github.com/BurntSushi/ripgrep rg
+
+
+>> bat 
+>> glogg
+
+
+git clone https://github.com/zsh-users/zsh-completions
+oh-my-zsh
+
+aqua:
+perimeter81
+sudo apt install -y git
+libssl-dev
+nvm
+yarn
+npm
+node
+podman/buildah  
+
+aqua aux:
+$ sudo apt install qemu-kvm libvirt-clients libvirt-daemon-system bridge-utils virt-manager
+vagrant
+virtualbox
+https://snapcraft.io/kontena-lens
+
+
+https://github.com/wagoodman/dive
+https://github.com/portainer/portainer
+
+
+
+
+https://www.google.com/intl/iw_il/chrome/
+
+
+
+sudo apt install -y git
+sudo snap install code
+sudo apt install -y zsh
+sudo apt install -y curl
+sudo apt install -y fzf
+sudo apt install -y htop
+sudo apt install -y xclip
+sudo apt install -y jq
+sudo apt install -y chrome-gnome-shell
+sudo apt install -y autojump   # source /ust/share/autojump/autojump.zsh
+sudo apt install -y mc
+
+
+#wget https://releases.hyper.is/download/deb
+#sudo apt install -y -f ?????
+
+# NO - see server repo ui dir
+#sudo apt install npm
+
+
+
+
+git clone https://github.com/avivataqua/aqua ~/aqua
+ln -s ~/aqua/dot/zshrc ~/.zshrc
+ln -s ~/aqua/dot/gitconfig ~/.gitconfig
+ln -s ~/aqua/dot/git.aliases ~/.git.aliases
+ln -s ~/aqua/dor/misc.aliases ~/.misc.aliases
+
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
+wget https://github.com/sharkdp/fd/releases/download/v8.1.1/fd_8.1.1_amd64.deb
+sudo apt install -y -f ./fd_8.1.1_amd64.deb
+
+wget https://github.com/BurntSushi/ripgrep/releases/download/12.1.1/ripgrep_12.1.1_amd64.deb
+sudo apt install -y -f ./ripgrep_12.1.1_amd64.deb
+
+# github bat 
+
+# https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository
+sudo apt-get install -y \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    gnupg-agent \
+    software-properties-common || exit
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - || exit
+sudo add-apt-repository \
+   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   $(lsb_release -cs) \
+   stable" || exit
+sudo apt-get update || exit
+sudo apt-get install -y docker-ce docker-ce-cli containerd.io || exit
+
+# https://github.com/zplug/zplug
+curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
+
+
+#### login to bitbucket
+mkdir -p ~/go/src/bitbucket.org/scalock/
+cd ~/go/src/bitbucket.org/scalock/
+git clone git@bitbucket.org:scalock/server.git
+git clone git@bitbucket.org:scalock/enforcer.git
+git clone git@bitbucket.org:scalock/license.git
+git clone git@bitbucket.org:scalock/analyzer.git
+git clone git@bitbucket.org:scalock/aquatypes.git
+mkdir -p ~/Work/DevOps/
+cd ~/Work/DevOps
+git clone git@bitbucket.org:scalock/devops.git
+git clone git@bitbucket.org:scalock/pipelines.git
+git clone git@bitbucket.org:scalock/pipeline-libs.git
+
+#### https://www.jetbrains.com/toolbox-app/
+
+#### https://zoom.us/download
+
+#### 
+https://static.perimeter81.com/apps/linux/amd64/Perimeter81.deb
+
+#####
+# Debian 10
+set +x
+sudo sh -c "echo 'deb http://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/Debian_10/ /' > /etc/apt/sources.list.d/devel:kubic:libcontainers:stable.list" || exit
+wget -nv https://download.opensuse.org/repositories/devel:kubic:libcontainers:stable/Debian_10/Release.key -O Release.key || exit
+
+sudo apt-key add - < Release.key || exit
+sudo apt-get update -qq || exit
+sudo apt-get -qq -y install buildah || exit
+
+------------------------------
+
+### docker login aquadev.azurecr.io registry.aquasec.com 
+
+### buildah login registry1.dsop.io  for dod
+
+
+mkdir 
+
+
+
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key C99B11DEB97541F0
+sudo apt-add-repository https://cli.github.com/packages
+sudo apt update
+sudo apt install gh
+
+gh release download -R sharkdp/fd/ latest 
+
+
+sudo mount -t ecryptfs ~/Documents/private ~/Documents/private \
+-o ecryptfs_cipher=aes,ecryptfs_key_bytes=32,ecryptfs_passthrough=no,\
+ecryptfs_enable_filename_crypto=no,\
+ecryptfs_sig=$(sudo cat ~root/.ecryptfs/sig-cache.txt)
+
+
+https://github.com/docker/hub-tool
+
+
+### gnome shell extentions
+sudo apt install chrome-gnome-shell
+sudo apt install gnome-tweaks
+#https://github.com/rammie/argos/tree/gnome-3.36
+#https://extensions.gnome.org/extension/1401/bluetooth-quick-connect/
+#
+
+➜  argos gnome-extensions list              
+argos@pew.worldwidemann.com
+gnome-clipboard@b00f.github.io
+mediacontrols@cliffniff.github.com
+sound-output-device-chooser@kgshank.net
+bluetooth-quick-connect@bjarosze.gmail.com
+extension-list@tu.berry
+desktop-icons@csoriano
+ubuntu-appindicators@ubuntu.com
+ubuntu-dock@ubuntu.com
+
+
+glogg

@@ -1,0 +1,3 @@
+okular
+git-extras
+bcompare # beyond compare https://www.scootersoftware.com/kb/linux_install

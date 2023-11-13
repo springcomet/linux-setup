@@ -1,0 +1,19 @@
+[user]
+	email = aviv.shavit@gmail.com
+	name = Aviv Shavit
+[alias]
+	ci = commit
+	cia = commit --amend
+	cic = -c core.editor='code --wait' commit
+	ciac = -c core.editor='code --wait' commit --amend
+	st = status -uno
+	co = checkout
+	unstage = reset
+	curb = rev-parse --abbrev-ref HEAD
+	shorg = config --get remote.origin.url
+	shco = rev-parse --short HEAD
+	rebase-dev = rebase origin/develop
+	rebase-cont = rebase --continue
+	rebase-abort = rebase --abort
+[core]
+	pager = less --tabs=4 -RFX
