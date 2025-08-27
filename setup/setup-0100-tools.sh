@@ -38,7 +38,6 @@ sudo snap install yq
 # crane https://github.com/google/go-containerregistry/releases
 # 
 
-# clipboard - https://hluk.github.io/CopyQ/ 
-sudo add-apt-repository ppa:hluk/copyq
-sudo apt update
-sudo apt install copyq
+sudo apt install fd-find # https://github.com/sharkdp/fd
+sudo apt install ripgrep # https://github.com/BurntSushi/ripgrep
+sudo apt install mc # Midnight Commander https://midnight-commander.org/

@@ -16,6 +16,11 @@ https://github.com/hackermare/media-controls/releases/download/v21/extension.zip
 sudo apt install -y glogg # A fast, advanced log explorer. http://glogg.bonnefon.org/
 sudo apt install -y pavucontrol
 
+# clipboard - https://hluk.github.io/CopyQ/ 
+# sudo add-apt-repository ppa:hluk/copyq
+# sudo apt update
+# sudo apt install copyq
+
 
 # clipboard - https://hluk.github.io/CopyQ/ 
 #sudo add-apt-repository ppa:hluk/copyq
