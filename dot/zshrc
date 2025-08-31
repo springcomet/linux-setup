@@ -77,42 +77,78 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 plugins=(
     fzf
-    zsh-completions
     fzf-tab
-    zsh-autosuggestions
     docker
     zoxide
+    zsh-autosuggestions
     zsh-syntax-highlighting
 )
 
 # zsh-completions \
-autoload -U compinit && compinit # for zsh-completions
+fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
+autoload -U compinit && compinit
+
 
 #  docker
 #  podman \
 #  git \
 # zsh-history-enquirer \
 
-# 
-# Widgets that accept the suggestion as far as the cursor moves
-ZSH_AUTOSUGGEST_PARTIAL_ACCEPT_WIDGETS=(
-	forward-word
-	emacs-forward-word
-	vi-forward-word
-	vi-forward-word-end
-	vi-forward-blank-word
-	vi-forward-blank-word-end
-	vi-find-next-char
-	vi-find-next-char-skip
-)
+# # 
+# # Widgets that accept the suggestion as far as the cursor moves
+# ZSH_AUTOSUGGEST_PARTIAL_ACCEPT_WIDGETS=(
+# 	forward-word
+# 	emacs-forward-word
+# 	vi-forward-word
+# 	vi-forward-word-end
+# 	vi-forward-blank-word
+# 	vi-forward-blank-word-end
+# 	vi-find-next-char
+# 	vi-find-next-char-skip
+# )
 
-#setopt INC_APPEND_HISTORY # save commands frequently  dont wait for exit 
-setopt APPEND_HISTORY # save commands at exit 
-setopt EXTENDED_HISTORY # save timestamp
+# #setopt INC_APPEND_HISTORY # save commands frequently  dont wait for exit 
+# setopt APPEND_HISTORY # save commands at exit 
+# setopt EXTENDED_HISTORY # save timestamp
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
+
+
+# seems to be needed for my wsl ubuntu windows terminal:
+
+# fix unknown action backward-delete-char
+bindkey '^I' expand-or-complete
+
+#enable selection from completeions
+#zmodload zsh/complist 2>/dev/null
+zstyle ':completion:*' menu select
+
+#from fzf-tab plugin readme
+# disable sort when completing `git checkout`
+zstyle ':completion:*:git-checkout:*' sort false
+# set descriptions format to enable group support
+# NOTE: don't use escape sequences (like '%F{red}%d%f') here, fzf-tab will ignore them
+zstyle ':completion:*:descriptions' format '[%d]'
+# set list-colors to enable filename colorizing
+zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+# force zsh not to show completion menu, which allows fzf-tab to capture the unambiguous prefix
+zstyle ':completion:*' menu no
+# preview directory's content with eza when completing cd
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza -1 --color=always $realpath'
+# custom fzf flags
+# NOTE: fzf-tab does not follow FZF_DEFAULT_OPTS by default
+zstyle ':fzf-tab:*' fzf-flags --color=fg:1,fg+:2 --bind=tab:accept
+# To make fzf-tab follow FZF_DEFAULT_OPTS.
+# NOTE: This may lead to unexpected behavior since some flags break this plugin. See Aloxaf/fzf-tab#455.
+zstyle ':fzf-tab:*' use-fzf-default-opts yes
+# switch group using `<` and `>`
+zstyle ':fzf-tab:*' switch-group '<' '>'
+
+#setopt INC_APPEND_HISTORY # save commands frequently  dont wait for exit 
+#setopt APPEND_HISTORY # save commands at exit 
+#setopt EXTENDED_HISTORY # save timestamp
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
